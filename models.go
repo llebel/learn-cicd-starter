@@ -25,7 +25,7 @@ func databaseUserToUser(user database.User) (User, error) {
 		return User{}, err
 	}
 	return User{
-		ID:        user.ID + "broken",
+		ID:        user.ID,
 		CreatedAt: createdAt,
 		UpdatedAt: updatedAt,
 		Name:      user.Name,
